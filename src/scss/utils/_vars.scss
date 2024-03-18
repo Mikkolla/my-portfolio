@@ -1,0 +1,17 @@
+// breakpoints
+$desktop-big: 1200px;
+$desktop-small:1000px;
+$tablet-big: 930px;
+$tablet-middle:800px;
+$tablet-small: 738px;
+$mobile: 576px;
+
+:root {
+	--ff: 'Inter', sans-serif;
+	--transition: .2s all ease-in-out;
+	--header-bg:#E95D35;
+	--btn: #E95D35;
+	--white: #fff;
+	--c-border: #eee;
+	--modal-color: #000;
+}

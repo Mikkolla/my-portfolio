@@ -1,0 +1,146 @@
+
+  .create {
+    background: var(--gn-bg);
+    display: flex;
+    padding-top: 400px;
+    position: relative; 
+    @include mobile {
+      height: auto;
+      padding-bottom: 50px;
+    }
+    &__wrapper {
+    }
+  
+    &__title {
+      color: var(---c-text-white);
+  
+      
+      font-family: var(--ff);
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 52px; /* 123.81% */
+      letter-spacing: -0.4px;
+      margin-bottom: 20px;
+      @include tablet-big {
+        text-align: end;
+        font-size: 32px;
+      }
+      @include tablet-middle {
+        text-align: start;
+      }
+    }
+  
+    &__desc {
+      margin-bottom: 65px;
+      color: var(---c-text-white);
+      max-width: 600px;
+     
+      font-family:var(--ff);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      @include tablet-big {
+        font-size: 18px;
+        text-align: start;
+        max-width: 500px;
+      }
+    }
+  
+    &__info-block {
+      display: flex;
+      gap: 30px;
+  
+      @include tablet-big {
+        flex-direction: column;
+        margin-left: 50px;
+  
+        align-self: center;
+      }
+  
+      @include tablet-middle {
+        margin-left: 0;
+        flex-direction: row;
+        align-self: flex-start;
+      }
+  
+      @include mobile {
+        gap: 50px;
+      }
+    }
+  
+    &__grid {
+    }
+  
+    &__grid-title {
+      margin-top: 29px;
+      margin-bottom: 16px;
+      color: var(---c-text-white);
+  
+      
+      font-family: var(--ff);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; 
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  
+    &__grid-desc {
+      color: var(---c-text-white);
+      max-width: 270px;
+      
+      font-family: var(--ff);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; 
+    }
+  }
+  .background {
+    
+  
+    
+    z-index: 12;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+  }
+  
+  .screen {
+    
+    position: a;
+    z-index: 2;
+    top: 148px;
+    height: 450px;
+    @include desktop-big {
+      height: 422px;
+      left: -50px;
+    }
+  
+    @include tablet-big {
+      left: -50px;
+    }
+    @include tablet-middle {
+      display: none;
+    }
+  }
+  
+  .object {
+    height: 535px;
+    position: absolute;
+    left: -500px;
+    top: 120px;
+    @include desktop-big {
+      height: 492px;
+    }
+  
+    @include tablet-middle {
+      display: none;
+    }
+  }
